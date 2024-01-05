@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c8a2c8;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-box {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px 10vw;
+            width: 70%;
+            text-align: center;
+        }
+
+        h2 {
+            color: #800080;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        label {
+            text-align: left;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .input-field {
+            outline: none;
+            border-color: #800080;
+            background-color: #c8a2c8;
+            box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+            transition: background-color 0.3s ease;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-width: 2px;
+            border-radius: 9px;
+            margin-bottom: 10px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #800080;
+            background-color: #c8a2c8;
+            box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+            transition: background-color 0.3s ease;
+        }
+
+        .input-field:hover {
+            outline: none;
+            border-color: #800080;
+            background-color: #c8a2c8;
+            box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .purple-button {
+            background-color: #800080;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 15px 30px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 18px;
+        }
+
+        .purple-button:hover {
+            background-color: #6a007a;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Employee Information</h2>
+        <form id="employee-form" action="addEmployee.php" method="post">
+            <div class="input-group">
+                <label for="employee_id">Employee ID:</label>
+                <input type="text" id="employee_id" name="employee_id" class="input-field" placeholder="Employee ID" required>
+            </div>
+            <div class="input-group">
+                <label for="employee_name">Employee Name:</label>
+                <input type="text" id="employee_name" name="employee_name" class="input-field" placeholder="Employee Name" required>
+            </div>
+            <div class="input-group">
+                <label for="designation">Designation:</label>
+                <input type="text" id="designation" name="designation" class="input-field" placeholder="Designation" required>
+            </div>
+            <div class="input-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" class="input-field" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" class="input-field" placeholder="Address" required>
+            </div>
+            <div class="input-group">
+                <label for="mobile_number">Mobile Number:</label>
+                <input type="tel" id="mobile_number" name="mobile_number" class="input-field" placeholder="Mobile Number" required>
+            </div>
+            <div class="button-group">
+                <button type="submit" name="submit" class="purple-button">Next</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

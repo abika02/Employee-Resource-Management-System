@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c8a2c8; /* Lilac background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        p {
+            background-color: #800080; /* Lilac color for headings */
+            color: #fff;
+            margin: 0; /* Remove margin to keep heading inside the padding */
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        input {
+            width: calc(100% - 20px);
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #800080;
+            box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+        }
+
+        input[type="submit"] {
+            background-color: #800080;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6a007a;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <form id="education-form" action="addEducation.php" method="post">
+        <!-- Educational Information fields -->
+        <p>Education Information</p>
+        <input type="text" name="employee_id" id="employee_id" placeholder="Employee ID" style="margin-top: 10px;">
+        <input type="text" name="ug" id="ug" placeholder="UG">
+        <input type="text" name="pg" id="pg" placeholder="PG">
+        <input type="submit" name="submit">
+    </form>
+</body>
+</html>

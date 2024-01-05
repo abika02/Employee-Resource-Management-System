@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #c8a2c8;
+            margin: 0;
+            padding: 20px; /* Add padding to the body */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 500px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #800080; /* Lilac color for headings */
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-around; /* Updated to space around for equal spacing */
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .purple-button {
+            background-color: #800080;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 30px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 18px;
+        }
+
+        .purple-button:hover {
+            background-color: #6a007a;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Employee Management System</h1>
+        <div class="button-group">
+            <a href="addEmployee.html" class="purple-button">Add Employee</a>
+            <a href="searchEmployee.html" class="purple-button">Search Employee</a>
+        </div>
+    </div>
+</body>
+
+</html>
